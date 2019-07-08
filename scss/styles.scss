@@ -34,7 +34,7 @@
 */
 
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #306283;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -350,7 +350,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/programming.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -647,11 +647,12 @@ footer {
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .project-image {
     float: left;
+    padding: 5px 0 5px 5px;
 }
 
 .project-info {
@@ -663,9 +664,14 @@ footer {
 
     h3 {
         font-size: 1.5em;
-        font-weight: 300;
+        font-weight: bold;
         color: $heading;
         margin: 0 0 15px 0;
+    }
+
+    ul {
+        text-align: left;
+        padding: 0 100px 0 150px;
     }
 
     p {
@@ -694,7 +700,35 @@ footer {
     -------------------------------
 */
 
-#skills {
+#professionalSkills {
+    padding: 50px 15px;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 800px;
+    }
+
+    li {
+        display: inline-block;
+        margin: 7px;
+        padding: 5px 10px;
+        color: $heading;
+        background: darken($background-alt, 5%);
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
+    }
+}
+
+#workingSkills {
     padding: 50px 15px;
     text-align: center;
 
