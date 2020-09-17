@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- <link href="scss/styles.scss" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -28,6 +29,9 @@
                 <a href="#education">Education</a>
             </li>
             <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
@@ -35,6 +39,9 @@
             </li>
             <li>
                 <a href="#workingSkills">Working Skills</a>
+            </li>
+            <li>
+                <a href="#certificates">Certificates</a>
             </li>
             <li>
                 <a href="#contact">Contact</a>
@@ -47,7 +54,8 @@
         <div id="lead-content">
             <h1>Anderson Ju</h1>
             <h2>Software Engineer</h2>
-            <a href="C:\Users\andyj\OneDrive\Documents\Resume\Anderson Ju Resume.pdf" download="Anderson Ju Resume.pdf" class="btn-rounded-white">Download Resume</a>
+            <!-- <a href="A:\andyj\Documents\Resume\Software Engineer Resume 2020.docx" download="Anderson Ju Resume 2020.pdf" class="btn-rounded-white">Download Resume</a> -->
+            <a href="https://s3-us-west-1.amazonaws.com/andersonju.me/Anderson+Ju+Resume+2020.pdf" download="Anderson Ju Resume 2020.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -71,35 +79,53 @@
                 <h4>Bachelor of Science in Computer Science</h4>
             </div>
             <!-- End .education-block -->
+    </div>
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="June 2019 – Present">
+                <h3>Infosys</h3>
+                <h4>Senior Associate Software Engineer</h4>
+                <ul style="font-size:0.9em">
+                    <li>
+                        Assigned to a project with a healthcare company and worked primarily in Cyber Security
+                    </li>
+                    <li>
+                        Automated formatting and analysis of reports for Vulnerability Management
+                    </li>
+                    <ul>
+                        <li>
+                            Wrote Excel Macros for Vulnerability Management, Certificate Management, and Privilege Access Management to expedite manual work, which reduced processing time by over 75%
+                        </li>
+                    </ul>
+                    <li>
+                        Wrote and executed PowerShell scripts which read CSV reports and populated the data into an HTML website
+                    </li>
+                    <li>
+                        Utilized WhiteHat Sentinel as a Dynamic Application Security Testing tool in order to discover, test, and track vulnerabilities
+                    </li>
+                    <li>
+                        Used tenable.io Security Center to obtain vulnerability reports for servers
+                    </li>
+                    <li>
+                        Created multiple standard operating procedures for different areas in Cyber Security
+                    </li>
+                    <li>
+                        Contributed to developing new processes in Certificate Management, which saved the company DigiCert units when generating private certificates
+                    </li>
+                    <li>
+                        Assisted in installing certificates onto servers and binding certificates to the https website
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="project shadow-large">
-                    <div class="project no-image">
-                    <!-- End .project-image -->
-                        <div class="project-info">
-                            <h3>Bash</h3>
-                            <ul>
-                                <li>
-                                    Worked with a partner in creating bash from scratch
-                                </li>
-                                <li>
-                                    Took care of the different connectors such as and operator and or operator
-                                </li>
-                                <li>
-                                    Tested special cases such as comments and edge case inputs to make sure code was optimal
-                                </li>
-                            </ul>
-                            <a href="https://github.com/aju1997/rshell">View Project</a>
-                        </div>
-                    <!-- End .project-info -->
-                    </div>
-                </div>
-                <!-- End .project -->
-
                 <div class="project shadow-large">
                     <div class="project no-image">
                 <!-- End .project-image -->
@@ -116,7 +142,13 @@
                                     Received data from mobile application and sent data to the Bluetooth module
                                 </li>
                                 <li>
-                                    Used data from the Bluetooth Module and partitioned the data in the Arduino Uno code to correspond to the 3 drinks
+                                    Used the data from the Bluetooth Module and partitioned the data in the Arduino Uno code to correspond to the 3 drinks
+                                </li>
+                                <li>
+                                    Diagramed a finite state machine in order to have a rough architecture of how the Arduino Uno code would function
+                                </li>
+                                <li>
+                                    Tested preset drinks and custom drinks to ensure that the system produced the correct mixed drink
                                 </li>
                             </ul>
                             <a href="https://github.com/aju1997/smartMix">View Project</a>
@@ -125,6 +157,60 @@
                     </div>
                 </div>
                 <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project no-image">
+                    <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Twitter Search Engine</h3>
+                                <ul>
+                                    <li>
+                                        Developed a web crawler in Python that gathered live tweets based on specific keywords and filters
+                                    </li>
+                                    <li>
+                                        Utilized Tweepy to collect the live tweets and Json to store the collected tweets
+                                    </li>
+                                    <li>
+                                        Created an HTML webpage that allows users to search for tweets
+                                    </li>
+                                    <li>
+                                        Tweets were ranked based on a page ranking algorithm that I modified in Elasticsearch service
+                                    </li>
+                                </ul>
+                            <a href="https://github.com/aju1997/Twitter-Crawler-Search-Engine">View Project</a>
+                        </div>
+                    <!-- End .project-info -->
+                    </div>
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project no-image">
+                    <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>rshell</h3>
+                                <ul>
+                                    <li>
+                                        Worked with a partner in creating a command shell emulator in C++
+                                    </li>
+                                    <li>
+                                        Designed a series of test scripts to ensure program functioned properly
+                                    </li>
+                                    <li>
+                                        Separated user input into vectors of commands and connectors
+                                    <li>
+                                        Pushed the vectors into a tree that executes each of the commands and connectors
+                                    </li>
+                                    <li>
+                                        Outputted all the executed commands into the terminal
+                                    </li>
+                                </ul>
+                            <a href="https://github.com/aju1997/rshell">View Project</a>
+                        </div>
+                    <!-- End .project-info -->
+                    </div>
+                </div>
+                <!-- End .project -->
+
+                
             </div>
         </div>
     </div>
@@ -146,12 +232,18 @@
     <div id="workingSkills">
         <h2 class="heading">Working Skills</h2>
         <ul>
-            <li>node.js</li>
-            <li>Angular.js</li>
+            <li>AWS</li>
             <li>Python</li>
             <li>Java</li>
             <li>Assembly</li>
             <li>Swift</li>
+        </ul>
+    </div>
+
+    <div id="certificates">
+        <h2 class="heading">Certificates</h2>
+        <ul>
+            <li>Purdue Univeristy Applied Cybersecurity Essentials</li>
         </ul>
     </div>
 
@@ -176,7 +268,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2019 Anderson Ju
+                        Copyright &copy; 2020 Anderson Ju
                     </p>
                 </div>
                 <div class="col-sm-2 top">
